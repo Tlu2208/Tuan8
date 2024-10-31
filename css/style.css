@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+}
+
+.menu{
+    height: 100vh;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.image{
+    width: 100%;
+    height: 70%;
+}
+
+.image >img{
+    width: 100%;
+    height: 100%;
+}
+
+.table-content{
+    width: 100%;
+    height: 30%;
+}
+
+.list-sign{
+    height: 30%;
+    width: 100%;
+    line-height: 65px;
+    border: 1px solid #dad5d5;
+}
+
+.list-choose >li{
+    display: inline-block;
+    margin: 0 2% 0 2%;
+}
+
+.list-choose li a{
+    text-decoration: none;
+}
+
+.infor-student{
+    width: 100%;
+}
+
+.infor-student tr th{
+    border: 1px solid #dad5d5;
+    padding: 5px 30px 5px 10px;
+}
+
+.note{
+    width: 100%;
+    height: 20%;
+}
+
+.note tr{
+    border: 1px solid #dad5d5;
+}
+
+
+.modall{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modall.open{
+    display: block;
+}
+
+.table-pay{
+    width: 30%;
+    height: 90%;
+    background-color: #fff;
+    margin-left: 35%;
+    margin-top: 2.5%;
+}
+
+.header-pay{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    border-bottom: 1px solid #dad5d5;
+}
+
+.header-pay h2{
+    font-size: 18px;
+    line-height: 65px;
+    width: 70%;
+    position: absolute;
+    padding-left: 5%;
+}
+
+.icon-head{
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    margin-top: 2%;
+    position: absolute;
+    left: 93%;
+    top: 15%;
+    color: rgb(168, 163, 163);
+}
+
+.body-pay{
+    height: 75%;
+    width: 90%;
+    margin: 2.5% 5%;
+    border: 1px solid #dad5d5;
+    border-radius: 5px;
+}
+
+
+#paymentForm label{
+    width: 30%;
+    margin-top: 4%;
+}
+
+#paymentForm input{
+    border: 1px solid #9e9b9b;
+    border-radius: 3px;
+}
+
+#paymentForm .equipment{
+    margin-left: 31%;
+}
+
+#paymentForm button{
+    width: 49%;
+    border: 0;
+    height: 40px;
+    margin-top: 8%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.color{
+    background-color: #e8ecef;
+}
+
+.pay{
+    margin-left: 0.5%;
+    background-color: #01a84e;
+}
+
+.cancel{
+    background-color: #f41c34;
+}
+
+.footer-pay{
+    height: 10%;
+    width: 100%;
+    border-top: 1px solid #dad5d5;
+}
+
+.footer-pay h2{
+    font-size: 18px;
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 60%;
+}

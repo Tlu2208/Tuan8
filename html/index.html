@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../botstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="../botstrap/js/jquery-3.7.1.min.js">
+    <link rel="stylesheet" href="../botstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="image">
+                <img src="../images/Screenshot 2024-10-04 155321.png" alt="">
+            </div>
+            <div class="table-content">
+                <div class="list-sign">
+                    <ul class="list-choose">
+                        <li><a href="">Trang chủ</a></li>
+                        <p class="register" style="display: inline-block; color: blue;">Dang ky</p>
+                        <li><a href="">Trợ giúp</a></li>
+                    </ul>
+                </div>
+                <table class="infor-student">
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã học viên </th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Tiền dịch vụ</th>
+                        <th>tiền đồ dùng</th>
+                        <th>Tổng tiền</th>
+                    </tr>
+                </table>
+                <table class="note">
+                    <tr>
+                        <th>Mã sinh viên:_____________</th>
+                        <th>Họ tên:______________</th>
+                        <th>Phòng thi:______________</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modall">
+        <div class="table-pay">
+            <div class="header-pay">
+                <h2 class="title">THÔNG TIN THANH TOÁN</h2>
+                <i class="fa-solid fa-xmark icon-head"></i>
+            </div>
+            <div class="body-pay">
+                <form id="paymentForm">
+                    <label>Mã học viên:</label>
+                    <input type="text" id="studentCode"><br>
+                    <label>Họ tên:</label>
+                    <input type="text" id="fullName"><br>
+                    <label>Email:</label>
+                    <input type="text" id="email"><br>
+                    <label>Dịch vụ:</label>
+                    <select id="service">
+                        <option value="0">Chọn dịch vụ</option>
+                        <option value="100000">Dịch vụ A (100,000)</option>
+                        <option value="200000">Dịch vụ B (200,000)</option>
+                        <option value="300000">Dịch vụ C (300,000)</option>
+                    </select><br>
+                    <label>Giá tiền:</label>
+                    <input type="text" class="color" id="servicePrice" readonly><br>
+                    <label>Đồ dùng:</label><br>
+                    <input type="checkbox" class="equipment" value="50000"> Áo quần bơi (50,000)<br>
+                    <input type="checkbox" class="equipment" value="30000"> Phao (30,000)<br>
+                    <input type="checkbox" class="equipment" value="20000"> Kính bơi (20,000)<br>
+                    <label>Tiền đồ dùng:</label>
+                    <input type="text" class="color" id="equipmentPrice" readonly><br>
+                    <label>Tổng tiền:</label>
+                    <input type="text" class="color" id="totalPrice" readonly><br>
+                    <button type="button" class="pay" onclick="submitForm()">Thanh toán</button>
+                    <button type="button" class="cancel" onclick="hideModal()">Hủy</button>
+                </form>
+            </div>
+            <div class="footer-pay">
+                <h2>Trang thanh toán</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
